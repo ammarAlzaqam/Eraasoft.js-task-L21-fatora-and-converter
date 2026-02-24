@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Fatora</title>
+</head>
+
+<body>
+    <section>
+        <div class="container d-flex align-items-center justify-content-center py-5 px-4">
+            <div class="col-12 col-lg-6 border shadow rounded d-flex flex-column gap-3 p-4">
+                <h1 class="fs-1 text-dark">Fatora Calculator</h1>
+                <input id="original" placeholder="Enter Fatora Price" type="number" class="form-control">
+                <input id="des" placeholder="Enter Discount Value" type="number" class="form-control">
+                <select class="form-select">
+                    <option value="" class="d-none">Choose your currency</option>
+                    <option value="EGP">EGP (Pounds)</option>
+                    <option value="USA">USA (Dollar)</option>
+                    <option value="EUR">EUR (Euro)</option>
+                </select>
+                <p class="mt-2">Original Price : <span class="display-original">----</span></p>
+                <p class="mb-2">Price After <span class="display-des"></span> Discount : <span
+                        class="display-afterDes">----</span>
+                </p>
+                <button onclick="calcDiscount()" class="btn btn-success">Calc Discount</button>
+
+                <a class="hyper-link border-bottom rounded-5 text-secondary d-flex gap-2 align-items-center justify-content-center fw-semibold py-2"
+                    href="./converter.html">
+                    Try Meter Converter
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

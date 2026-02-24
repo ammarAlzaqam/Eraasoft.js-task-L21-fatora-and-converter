@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Barlow", sans-serif;
+  color: #25292c;
+}
+
+h1,
+p,
+a,
+span,
+label,
+input,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f6f3ef;
+}
+
+.hyper-link {
+  transition:
+    color 0.4s ease,
+    border 0.4s ease;
+  &:hover {
+    color: #0d6efd !important;
+    border-color: #0d6efd !important;
+  }
+
+  i {
+    font-size: inherit;
+    color: inherit;
+  }
+}
+
+#converter {
+  .container {
+    height: 100dvh;
+
+    .box {
+      background-color: #fffffc;
+      width: 461px;
+      max-width: 100%;
+      border-radius: 25px;
+      border: 1px solid #bbd0ff;
+      padding: 50px clamp(24px, 7vw, 50px);
+      gap: 35px;
+
+      h1 {
+        color: #1576d6;
+        font-weight: 600;
+        font-size: clamp(26px, 5vw, 32px);
+        line-height: 100%;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      form {
+        .input-field {
+          label {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            text-transform: capitalize;
+            margin-bottom: 12px;
+          }
+
+          input {
+            border-radius: 12px;
+            border: 1px solid #6c757d80;
+            padding: 16px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+
+            &::placeholder {
+              color: #6c757d80;
+            }
+          }
+        }
+
+        > button {
+          background-color: #25292c;
+          border-radius: 12px;
+          padding: 12px 16px;
+
+          color: #fffffc;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 100%;
+          text-transform: capitalize;
+          transition: opacity 0.4s ease;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        p {
+          border-radius: 12px;
+          border: 1px solid #f4c123;
+          padding: 14px 1rem;
+          text-align: center;
+
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}

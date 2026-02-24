@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./conv-icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="converter">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="box d-flex flex-column">
+                <h1>Inch-To-Meter Converter</h1>
+
+                <form class="d-flex flex-column gap-3">
+                    <div class="input-field">
+                        <label for="inches">Number of inches:</label>
+                        <input class="form-control" placeholder="Enter number of inches here" type="number" id="inches">
+                    </div>
+                    <button onclick="inchesConverter()" type="button" class="btn btn-dark">calculate</button>
+                    <p id="result">The result will appear here</p>
+                    <a class="hyper-link border-bottom rounded-5 text-secondary d-flex gap-2 align-items-center justify-content-center fw-semibold py-2"
+                        href="./index.html">
+                        Try Meter Converter
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
